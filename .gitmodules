@@ -1,0 +1,3 @@
+[submodule "repositories/pyodide"]
+	path = repositories/pyodide
+	url = https://github.com/pthom/pyodide.git

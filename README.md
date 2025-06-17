@@ -18,7 +18,6 @@
 ### Prerequisites
 
 - Linux OS
-- Conda
 
 
 ### Link imgui_bundle
@@ -29,10 +28,10 @@
 cf https://pyodide.org/en/stable/development/building-from-sources.html
 
 ```
+python3.13 -m venv venv_pyodide
+source venv_pyodide/bin/activate
 cd repositories/pyodide
 git submodule update --init
-conda env create -f environment.yml  # will create pyodide-env
-conda activate pyodide-env
 make   # will build emsdk, pyodide, and the packages
 ```
 

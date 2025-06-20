@@ -1,3 +1,6 @@
 [submodule "repositories/pyodide"]
 	path = repositories/pyodide
 	url = https://github.com/pthom/pyodide.git
+[submodule "repositories/pyodide-recipes"]
+	path = repositories/pyodide-recipes
+	url = https://github.com/pthom/pyodide-recipes.git

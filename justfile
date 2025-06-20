@@ -15,11 +15,9 @@ default:
 
 
 build_pyodide_base_packages:
-    cd {{PYODIDE_FOLDER}} && pyodide build-recipes {{BASE_PACKAGE_LIST}} --install
+    cd {{PYODIDE_FOLDER}} && pyodide build-recipes {{BASE_PACKAGE_LIST}}  --recipe-dir ../pyodide-recipes/packages --install
 
 
 build_pyodide_imgui_bundle:
-    cd {{PYODIDE_FOLDER}} && pyodide build-recipes {{BASE_PACKAGE_LIST}} imgui_bundle --install
+    cd {{PYODIDE_FOLDER}} && pyodide build-recipes {{BASE_PACKAGE_LIST}} imgui-bundle --recipe-dir ../pyodide-recipes/packages --install
     # cd {{PYODIDE_FOLDER}} && pyodide build-recipes daft_lib --install
-
- 

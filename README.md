@@ -32,6 +32,9 @@ python3.13 -m venv venv_pyodide
 source venv_pyodide/bin/activate
 cd repositories/pyodide
 git submodule update --init
+cd pyodide-build 
+pip install -v .
+cd ..
 make   # will build emsdk, pyodide, and the packages
 ```
 

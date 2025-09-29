@@ -1,10 +1,6 @@
 # Note about conda environment activation:
 # ----------------------------------------
-# The recipes in this file suppose that the conda environment "pyodide-env" has been created and activated.
-# If it is not activated, you may run recipes like this:
-#
-#    conda run -n pyodide-env just your_recipe_name
-#
+# The recipes in this file suppose that we use the venv "imgui_bundle_pyodide_tooling/venv_pyodide"
 
 PYODIDE_FOLDER := "repositories/pyodide"
 BASE_PACKAGE_LIST := "numpy Pillow pandas ipython requests opencv-python typing-extensions pydantic munch matplotlib future scikit-learn peewee"
